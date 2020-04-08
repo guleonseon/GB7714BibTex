@@ -152,8 +152,7 @@
     }
 
     function debug(str) {
-        // return console.log(str)
-        return
+        //return console.log(str)
     }
 
     var btn = "<input type=\"button\" value=\"BibTex\" class=\"save clipboard\" id=\"bib_save\">";
@@ -237,7 +236,7 @@
                 debug(title)
                 baseInfo.title = title
 
-                var miscs = /(.*),(.*),(.*)\((.*)\):(.*)/.exec(items[3])
+                var miscs = /(.*),(.*)/.exec(items[3])
                 debug(miscs)
                 baseInfo.year = miscs[2].trim()
                 var extend = {
