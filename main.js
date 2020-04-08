@@ -2,7 +2,7 @@
 // @name         gb7715-2015 bibtex
 // @namespace    https://github.com/guleonseon/GB7714BibTex
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
-// @version      1.1
+// @version      1.2
 // @description  CNKI -> BibTex
 // @author       Guleon
 // @match        https://kns.cnki.net/kns/ViewPage/viewsave.aspx
@@ -282,7 +282,7 @@
             input.select()
             document.execCommand('Copy')
             document.body.removeChild(input)
-
+            alert("成功复制到剪切板\n"+bibTex)
         })
     })
 
