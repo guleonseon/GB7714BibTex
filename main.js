@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         gb7715-2015 bibtex
-// @namespace    https://github.com/guleonseon
+// @namespace    https://github.com/guleonseon/GB7714BibTex
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
 // @version      1.0
 // @description  CNKI -> BibTex
@@ -159,7 +159,6 @@
     var btn = "<input type=\"button\" value=\"BibTex\" class=\"save clipboard\" id=\"bib_save\">";
     jQuery(document).ready(function($) {
         $(".btnDiv").append(btn)
-        console.log("hello world")
 
         $("#bib_save").click(function(){
 
