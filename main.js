@@ -152,7 +152,8 @@
     }
 
     function debug(str) {
-        return console.log(str)
+        // return console.log(str)
+        return
     }
 
     var btn = "<input type=\"button\" value=\"BibTex\" class=\"save clipboard\" id=\"bib_save\">";
@@ -170,7 +171,7 @@
             var types = scan.exec(str)
 
             if (types.length < 1 || map[types[1]] == null) {
-                console.log('不支持的引用类型')
+                alert('不支持的引用类型')
                 return
             }
 
