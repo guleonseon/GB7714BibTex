@@ -2,7 +2,7 @@
 // @name         gb7715-2015 bibtex
 // @namespace    https://github.com/guleonseon/GB7714BibTex
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
-// @version      1.0
+// @version      1.1
 // @description  CNKI -> BibTex
 // @author       Guleon
 // @match        https://kns.cnki.net/kns/ViewPage/viewsave.aspx
@@ -168,7 +168,7 @@
             var scan = /.*\[([A-Z])\].*/
             var types = scan.exec(str)
 
-            if (types.length < 1 || map[types[1]] == null) {
+            if (types == null || map[types[1]] == null) {
                 alert('不支持的引用类型')
                 return
             }
